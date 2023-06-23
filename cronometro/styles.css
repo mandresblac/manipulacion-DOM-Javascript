@@ -1,0 +1,70 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Estilos para la imagen de fondo */
+  background-image: url(img/madera.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* CONTENEDORES */
+.contenedor-principal {
+  background-color: white;
+  width: 80vw;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-botones {
+  /* background-color: red; */
+  padding: 20px;
+}
+
+/* ESTILOS DEL CRONOMETRO */
+#cronometro {
+  width: 100%;
+  font-size: 70px;
+  font-weight: bold;
+  user-select: none; /* Para que el usuario no pueda seleccioanr el texto */
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+/* ESTILOS PARA LOS BOTONES */
+.boton {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+  background-color: #08e008;
+}
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+  background-color: #ffdc00;
+}
+
+#boton-reiniciar {
+  background-color: red;
+}
